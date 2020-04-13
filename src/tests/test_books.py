@@ -49,7 +49,6 @@ def test_get_book_by_incorrect_id(test_app, monkeypatch):
     monkeypatch.setattr(crud, "get", mock_get)
 
     response = test_app.get(API_PREFIX + "/book/9999")
-    print(response.json())
     assert response.status_code == 404
     assert response.json()["detail"] == "Book not found"
 
