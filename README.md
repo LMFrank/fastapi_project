@@ -39,6 +39,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### Docker部署
+
+```shell
+$ docker-compose up -d --build
+```
+
 ### TODO
 
-1. 使用Docker构建整体开发和测试环境，并用Docker启动项目和完成测试
+1. ~~使用Docker构建整体开发和测试环境，并用Docker启动项目和完成测试~~
